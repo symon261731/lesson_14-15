@@ -1,0 +1,378 @@
+@import "null.scss";
+@import "fonts.scss";
+@import "var.scss";
+
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+
+/* ================================================HEADER=======================================================*/
+
+
+
+
+
+
+
+
+/* =================================================MAIN =========================================*/
+.main{
+    flex: 1 1 auto;
+    background-color: #F5F5F5;
+}
+
+.tittles{
+    max-width: 583px;
+    position: relative;
+    z-index: 10;
+    .tittles__sub-tittle{
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        padding-left: 16px;
+        margin-bottom: 33px;
+        
+    }
+    .tittles__main-tittle{
+        color: white;
+        font-size: 36px;
+        font-weight: 900;
+    }
+    .tittles__sub-tittle_purple-icon{
+        padding-left: 33px;
+        color: #5D62B5;
+        font-size: 12px;
+        font-weight: 700;
+        background: url("../image/our-promise-icon.svg") 0 -6px no-repeat;
+        background-size: 25px 25px;
+    }
+    .tittles__main-tittle_black-text{
+        color: black;
+    }   
+    .tittles__sub-tittle_white-icon{
+        background: url("../image/white-icon.svg") 0 -6.5px no-repeat;
+        background-size: 25px 25px;
+        padding-left: 32px;
+    }
+}
+.tittles_margin-before-flex{
+    margin-bottom: 68px;
+}
+[class*="__container"]{
+    box-sizing: content-box;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 15px; /*отступы безопастности*/
+}
+
+.who-we-are_margin{
+    margin-top: 100px;
+    margin-bottom: 230px;
+}
+.who-we-are{
+    position: relative;
+    &::before{
+        content: "";
+        display: inline-block;
+        background: url("../image/Blob-2.png") ;
+        width: 665px; height:591px; 
+        position: absolute;
+        left: 50%;
+        bottom:  -22%;
+        z-index: 1; 
+        transform: translateX(-74%);
+    }
+    .who-we-are__box{
+        position: relative;
+        max-width: 1020px;
+        margin: 0 auto;
+        background-color: #5D62B5;
+        padding: 0px 87px;
+        /*padding-bottom:  354px;*/
+        border-radius: 40px;
+    }
+        .tittles_margin{
+            padding-top: 100px;
+            margin-bottom: 36px;
+        }
+        
+        .who-we-are__text{
+            position: relative;
+            z-index: 20;
+            color: #F5F5F5;
+            
+            line-height: 1.28;
+            letter-spacing: 0.15px;
+            margin-bottom: 54px;
+        }
+    }
+
+.dog{
+    /*position: relative;
+    &::before{
+        content: "";
+        display: inline-block;
+        background: url("../image/Blob-2.png") ;
+        background-repeat: no-repeat;
+        width: 665px; height:591px;  
+        position: absolute;
+        left: -8%;
+        bottom: -58%;
+        z-index: 1;
+    }*/
+    .dog__image{
+        max-width: 100%;
+        margin: 0 50% -160px 50%;
+        transform: translateX(-50%);
+        position: relative;
+        z-index: 10;
+        
+    }
+}    
+
+    
+    /* flex */ 
+    .promise_margin{
+        margin-bottom: 122px;
+    }
+    .promise__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -12px;
+        row-gap: 24px; /*Чтобы при добавлении новых карточек было расстояние от верхней карточки к нижней*/
+        
+    }
+    .promise__item {
+        flex: 0 0 33.333%;
+        padding: 0 12px;
+    }
+    .item-promise {
+        display: flex;
+        align-items: flex-start;
+        column-gap: 23px; /* делаем гэп чтобы при случаи с удалением картинки не было схлопывания у паддинга в 23px*/
+    }
+    .item-promise__icon {
+        flex:0 0 63px;
+    }
+    /* .item-promise__body {
+        ----padding-left: 23px;---- 
+    } */
+    .item-promise__title {
+        color: #f2726f;
+        font-size: 19px;
+        font-weight: 900;
+        line-height: 1.37;
+        margin:  0 0 20px 0;
+        &:not(:last-child){
+            margin: 0 0 20px 0;
+        }
+
+    }
+    .item-promise__text{
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.15px;
+    }
+
+/* SERIVICES */
+.services__bullshit-but-margin{
+    margin-bottom: 74px;
+}
+    .services {
+        padding: 100px 0 120px 0;
+
+    }
+    .services__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .services__flex-container {
+        display: flex;
+        row-gap: 24px;
+        margin: 0 -12px;
+        flex-wrap: wrap;
+    }
+    .services__flex-element {
+        flex: 1 1 33.333%;
+        padding: 0 12px;
+    }
+    .content {
+        background-color: white;
+        border-radius: 20px;
+        padding: 50px 44px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+
+    }
+    .content__icon {
+        margin-bottom: 33px;
+        flex: 0 0 63px;
+        max-width: 63px;
+        /* height: 63px;*/
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    /* .content__icon img{
+        max-width: 100%;
+    }*/
+    .content__tittle {color: #f2726f;
+        font-size: 19px;
+        font-weight: 900;
+        line-height: 1.37;
+        
+        margin-bottom: 20px;
+
+    }
+    .content__text {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.15px;
+    }
+
+
+.services__button{ 
+    text-align: center;
+    align-self: center;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 2;
+    background-color: #f2726f;
+    border-radius: 8px;
+    min-height: 48px;
+
+    padding: 12px 25px;
+    margin: 66px 0 0 0 ; /* Или для services__container задать :not(:last-child){margin-bottom:66px) */
+    transition-duration: 600ms;
+        &:hover{
+            background-color: #5D62B5;
+            color: #f2726f;
+            
+        }
+}
+.services_margin{
+    margin-bottom: 100px;
+}
+
+/*IMPACT*/
+.impact{
+    background-color: #29d3be;
+    padding-top: 112px;
+    padding-bottom: 212px;
+    position: relative;
+    &::before{
+        content:"";
+        background: url("../image/impact/Blob-2.png") 0 0  no-repeat;
+        width: 695px;
+        height: 308px;
+        position: absolute;
+        top: 0; 
+        right: 50%;
+        z-index: 1;
+        transform: translateX(87%);    
+    }   
+}
+.impact__container{
+    position: relative;
+    z-index: 5;
+}
+.impact__body{
+    display: flex;
+    margin: 0 -15px;
+    justify-content: space-between;
+    margin-bottom: 79px;
+    }
+
+.impact__content{
+    padding: 0 15px;
+    flex:0 1 50%;
+}
+.impact__tittles{
+    max-width: 411px;
+}
+.impact__image{
+    padding: 0 15px;
+    margin: -192px 0 0 0;
+    
+}
+.impact__image img{
+    flex:0 1 50%;
+    max-width: 100%;
+    border-radius: 40px;
+}
+
+
+/* STATISTIC */
+
+/*FLEX*/
+
+.impact__flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* ДЛЯ СЕБЯ*/
+    margin: 0 -12px;
+    row-gap: 24px; /* задаем чтобы был отступ от вехней карточкп к нижней при перескакивании*/
+}
+.impact__flex-element{
+    
+    display: flex; /* задаем флекс чтобы выстроить иконку и текст*/
+    padding: 0 12px;
+    flex: 0 1 25%;
+    row-gap: 24px;
+    align-items: flex-start;
+}
+
+.impact__icon{
+    flex: 0 0 76px; /* задаем размер иконке и запрещаем ей расширяться и сужаться*/
+}
+/* ТЕКСТ С ЧИСЛАМИ */
+
+
+.impact__box{
+    padding-left: 11px;
+}
+.impact__number{
+        &:not(:last-child){
+            margin-bottom: 3px;
+        }
+        font-size: 36px;
+        font-weight: 900;
+        color: white;
+        line-height: 1.17;
+}
+.impact__text{
+        color: #5D62B5;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.15px;
+        line-height: 1.5;
+}
+
+
+
+
+
+
+/* =================================================footer ======================================*/
+
+
+
+
+
+
